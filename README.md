@@ -1,8 +1,34 @@
 # Predicting-Illegal-Fishing-using-Neural-Network-
 
 
-The aim of this project is to predict illegal fishing using machine learning. Fishing can be classified as illegal for various reasons, including the type of fishing gear, fishing season, overfishing, fishing in Marine Protected Zones (MPZ), misreporting catch, and fishing endangered species, to name a few. However, due to the limits of available data, I will only be focusing on MPZs in the ocean (due to computational limits).
+# Overview
+The aim of this project is to predict illegal fishing using machine learning. Fishing can be classified as illegal for various reasons, including the type of fishing gear, fishing season, overfishing, fishing in Marine Protected Zones (MPZ), misreporting catch, and fishing endangered species, to name a few. However, due to the limits of available data, this project focuses on MPZs in the ocean.
 
-The data used for this project is freely available on Global Fishing Watch (ship vessel data), Natural Earth Data (ocean boundaries), and Protected Planet (MPZ boundaries). The vessel data has been preprocessed with an is_fishing label to identify if a vessel is fishing at that instant or not.
+# Data Sources
+Global Fishing Watch: Ship vessel data, including preprocessed labels indicating if a vessel is fishing.
+Natural Earth Data: Ocean boundaries data.
+Protected Planet: Marine Protected Zones (MPZ) boundaries.
+Project Structure
 
-As it is mandatory for shipping vessels to have a tracker, we can use their journey logs and cross-reference them with the geometric data of MPZs to see if they traveled through the MPZ and fished in these waters. Using this, we can manually create a label for illegal fishing (yes or no) if the ship had traveled through and fished in an MPZ after it had been established. Using this data, I built a neural network algorithm to predict illegal fishing activity with an accuracy of 97%.
+# Folders
+Algorithm
+Contains the Jupyter notebook for building and training the neural network model.
+Data Processing
+SQL and Jupyter notebooks for creating the database, loading data, and classifying fishing activity.
+Plots
+Visual representation of MPZs.
+
+# Repository Contents
+Algorithm/
+
+Neural Network.ipynb: Jupyter notebook to train and evaluate the neural network model.
+Data Processing/
+
+Create_Database.sql: SQL script to create the PostgreSQL database and necessary tables.
+Filter_ship_data.sql: SQL script to filter and preprocess ship data.
+Illegal_Fishing_Classification.sql: SQL script to classify fishing activity as legal or illegal.
+Load_gdb_data.ipynb: Jupyter notebook to load geospatial data into the database.
+load_shp_to_psql.sql: SQL script to load shapefile data into PostgreSQL.
+Plots/
+
+MPZ+Plot.png: Image showing the plot of Marine Protected Zones.
