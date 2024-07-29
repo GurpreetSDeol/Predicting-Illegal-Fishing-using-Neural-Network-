@@ -19,16 +19,23 @@ Plots
 Visual representation of MPZs.
 
 # Repository Contents
+
 Algorithm/
 
 Neural Network.ipynb: Jupyter notebook to train and evaluate the neural network model.
+
 Data Processing/
 
 Create_Database.sql: SQL script to create the PostgreSQL database and necessary tables.
+
 Filter_ship_data.sql: SQL script to filter and preprocess ship data.
+
 Illegal_Fishing_Classification.sql: SQL script to classify fishing activity as legal or illegal.
+
 Load_gdb_data.ipynb: Jupyter notebook to load geospatial data into the database.
+
 load_shp_to_psql.sql: SQL script to load shapefile data into PostgreSQL.
+
 Plots/
 
 MPZ+Plot.png: Image showing the plot of Marine Protected Zones.
