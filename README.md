@@ -39,3 +39,8 @@ load_shp_to_psql.sql: SQL script to load shapefile data into PostgreSQL.
 Plots/
 
 MPZ+Plot.png: Image showing the plot of Marine Protected Zones.
+
+# Future Work
+Real-time Tracking API: Plan to implement an API to track vessels in real-time, providing timely predictions of illegal fishing activities.
+
+Enhancements: Continuously improve the model's accuracy and incorporate additional data sources for better predictions.
