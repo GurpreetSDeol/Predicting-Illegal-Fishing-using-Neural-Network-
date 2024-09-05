@@ -11,13 +11,13 @@ Protected Planet: Marine Protected Zones (MPZ) boundaries.
 Project Structure
 
 # Folders
-API and AWS
+## API and AWS
 Contains the test files for the global fishing watch API.
-Algorithm
+##Algorithm
 Contains the Jupyter notebook for building and training the neural network model.
-Data Analysis
+##Data Analysis
 Contains plots and analysis of the data.
-Data Processing
+##Data Processing
 SQL and Jupyter notebooks for creating the database, loading data, and classifying fishing activity.
 Plots
 Visual representation of MPZs.
