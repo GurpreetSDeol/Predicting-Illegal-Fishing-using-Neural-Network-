@@ -2,52 +2,36 @@
 
 
 # Overview
-The aim of this project is to predict illegal fishing using machine learning. Fishing can be classified as illegal for various reasons, including the type of fishing gear, fishing season, overfishing, fishing in Marine Protected Zones (MPZ), misreporting catch, and fishing endangered species, to name a few. However, due to the limits of available data, this project focuses on MPZs in the ocean.
+The aim of this project is to predict illegal fishing using machine learning. Fishing can be classified as illegal for various reasons, including the type of fishing gear, fishing season, overfishing, fishing in Marine Protected Zones (MPZ), misreporting catch, and fishing endangered species, to name a few. However, due to the limits of available data, this project focuses on illegal fishing in MPZs in the ocean and major lakes. 
+
+For the algorithm, the data was assigned 1 of 3 labels for illegal fishing; 
+
+- 'yes' if during the timestamp of the event, the ship was fishing, its coordinates were in an established MPZ, and the timestamp year is equal or greater than the year the MPZ was established.
+- 'maybe' if during the timestamp of the event, the ship was not fishing but its coordinates were in an established MPZ and the timestamp year is equal or greater than the year the MPZ was established.
+- 'no' if the ship was not in an established MPZ during the fishing event.ot in an established MPZ during the fishing event. 
 
 # Data Sources
 Global Fishing Watch: Ship vessel data, including preprocessed labels indicating if a vessel is fishing.
 Natural Earth Data: Ocean boundaries data.
-Protected Planet: Marine Protected Zones (MPZ) boundaries.
-Project Structure
-
-# Folders
-__API and AWS__: 
-Contains the test files for the global fishing watch API.
-
-__Algorithm__:
-Contains the Jupyter notebook for building and training the neural network model.
-
-__Data Analysis__:
-Contains plots and analysis of the data.
-
-__Data Processing__:
-SQL and Jupyter notebooks for creating the database, loading data, and classifying fishing activity.
+Protected Planet: .shp files containing Marine Protected Zones (MPZ) boundaries.
 
 # Repository Contents
 
-__Algorithm__/
-
-Neural Network.ipynb: Jupyter notebook to train and evaluate the neural network model.
-
-__API and AWS__/ 
-Test Api.py: Python file for making a request to the API
-
-__Data Analysis__/ 
-
 Analysis.ipynb: Jupyter notebook containing the analysis of fishing events data.
-Plots: Contains plots.
-
-__Data Processing__/
 
 Create_Database.sql: SQL script to create the PostgreSQL database and necessary tables.
 
-Filter_ship_data.sql: SQL script to filter and preprocess ship data.
+Filter_data.ipynb: Filter the .shp files and csv files
 
 Illegal_Fishing_Classification.sql: SQL script to classify fishing activity as legal or illegal.
 
-Load_gdb_data.ipynb: Jupyter notebook to load geospatial data into the database.
+Neural_Network.py: Python Script to train and evaluate the neural network model.
 
-load_shp_to_psql.sql: SQL script to load shapefile data into PostgreSQL.
+Neural_Network.keras: Neural Network model 
+
+Plots: Contains plots.
+
+Test Api.ipynb: Current work in progress Jupyter Python file for making a request to the API.
 
 
 
