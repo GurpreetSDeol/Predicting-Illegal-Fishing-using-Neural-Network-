@@ -1,6 +1,6 @@
 # Predicting-Illegal-Fishing-using-Neural-Network-
 
-# Update
+# Update  17/10/2024
 The scope of the original project, which includes all of the oceans and lakes, has proven to be a challenging endeavor due to limited resources. This has also impacted my ability to train the ML algorithm with reasonable accuracy. Consequently, I will scale down the project to focus on a specific ocean. Additionally, I plan to implement more methods for classifying fishing as illegal, including considering fishing seasons and any other relevant metrics I can acquire.
 
 # Overview
