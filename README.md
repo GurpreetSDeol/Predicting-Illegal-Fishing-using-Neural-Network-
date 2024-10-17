@@ -1,5 +1,7 @@
 # Predicting-Illegal-Fishing-using-Neural-Network-
 
+# Update
+The scope of the original project, which includes all of the oceans and lakes, has proven to be a challenging endeavor due to limited resources. This has also impacted my ability to train the ML algorithm with reasonable accuracy. Consequently, I will scale down the project to focus on a specific ocean. Additionally, I plan to implement more methods for classifying fishing as illegal, including considering fishing seasons and any other relevant metrics I can acquire.
 
 # Overview
 The aim of this project is to predict illegal fishing using machine learning. Fishing can be classified as illegal for various reasons, including the type of fishing gear, fishing season, overfishing, fishing in Marine Protected Zones (MPZ), misreporting catch, and fishing endangered species, to name a few. However, due to the limits of available data, this project focuses on illegal fishing in MPZs in the ocean and major lakes. 
