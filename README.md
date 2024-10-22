@@ -14,7 +14,7 @@ Protected Planet: .shp files containing Marine Protected Zones (MPZ) boundaries.
 
 # Repository Contents
 
-Analysis.ipynb: Jupyter notebook containing the analysis of fishing events data.
+__Analysis.ipynb__: Jupyter notebook containing the analysis of fishing events data.
 
 __Plots__: Contains plots.
 
